@@ -1,0 +1,55 @@
+.filme{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(88,1,1,1) 14%, rgba(97,4,4,1) 91%);
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: #00000044 10px 0 20px --10px;
+    transition: all ease-in-out 200ms;
+    transform-origin: center bottom;
+  }
+  .filme:hover {
+    transform: scale(1.05);
+  }
+  .filme img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  .filme small{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: #00000055;
+    color: #FFF;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    backdrop-filter: blur(10px);
+  }
+  .filme div {
+    padding: 1rem;
+  }
+  .filme div b {
+    display: block;
+  }
+  .filme button{
+  position: absolute;
+  top:20%;
+  left:50%;
+  transform: translate(-50%);
+  border: none;
+  background: #00000088;
+  color: #FFF;
+  padding: 0.5rem 1rem;
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  transition: all ease-in-out 200ms;
+  opacity: 0;
+  }
+  .filme:hover button {
+    top: 25%;
+    opacity: 1;
+  }

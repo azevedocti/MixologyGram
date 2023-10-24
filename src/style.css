@@ -1,16 +1,43 @@
-* {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-body {
-  margin: 0;
-  padding: 1rem;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+html,body{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 35%, rgba(97,5,5,1) 100%);
 }
-
-h1 {
-  font-weight: 800;
-  font-size: 1.5rem;
+a{
+  color: white;
+  font-weight: bold;
+  margin: 1 rem 0;
+}
+.box-login {
+  background: rgba(131, 52, 52, 0.8);
+  padding: 1rem 2rem;
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius:1rem;
+  box-shadow: rgba(0,0,0,0.5) 0 5px 15px -10px;
+}
+.box-login h1 {
+  margin: 0.5rem 0;
+}
+.box-login input {
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+.box-login button {
+  display: block;
+  width: 100%;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.box-login button[type='submit']{
+  background: rgb(46, 4, 4);
+  color:white;
+}
+.box-login button[type='submit']:hover {
+  background: rgb(196, 37, 37);
 }
