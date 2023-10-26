@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Login } from '../components/Login';
 
-export function Login() {
+export function LoginPage() {
 
   return (
     <div className="box-login">
