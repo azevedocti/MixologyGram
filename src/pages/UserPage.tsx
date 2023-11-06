@@ -22,14 +22,14 @@ export function UserPage() {
 
   return (
     <>
-      <h1>Bem-vindo!</h1>
+      <h1 className="NeonText">Início - Criar</h1>
       <hr />
       <h2>Seus favoritos</h2>
       <hr />
       <h2>Veja outros lançamentos</h2>
       <div style={{display: 'grid', 
       gridTemplateColumns:'1fr 1fr 1fr',
-      gap: "1rem",
+      gap: "1rem", maxWidth: "500px",
     }}
       >
       {movies?.map((movie) => {

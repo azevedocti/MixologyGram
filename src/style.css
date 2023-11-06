@@ -4,15 +4,27 @@ html,body{
   font-family: 'Roboto', sans-serif;
   color: white;
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 35%, rgba(97,5,5,1) 100%);
+background: black;
+}
+h1{
+  text-align: center;
+  color: white;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #bc13fe,
+  0 0 82px #bc13fe,
+  0 0 92px #bc13fe,
+  0 0 102px #bc13fe,
+  0 0 151px #bc13fe;
 }
 a{
   color: white;
   font-weight: bold;
-  margin: 1 rem 0;
 }
 .box-login {
-  background: rgba(131, 52, 52, 0.8);
+  background: rgba(41, 34, 34, 0.8);
   padding: 1rem 2rem;
   max-width: 200px;
   margin: 0 auto;
@@ -35,9 +47,9 @@ a{
   border: none;
 }
 .box-login button[type='submit']{
-  background: rgb(46, 4, 4);
-  color:white;
+  background: rgb(185, 178, 178);
+  color:black;
 }
 .box-login button[type='submit']:hover {
-  background: rgb(196, 37, 37);
+  background: rgb(150, 10, 143);
 }
