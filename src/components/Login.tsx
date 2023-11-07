@@ -26,7 +26,7 @@ export function Login() {
 
   return (
     <>
-    <form onSubmit={handleLogin}>
+    <form id="login" onSubmit={handleLogin}>
       <div>
       <label> Usuário: </label>
       <input onChange={(e) => setUsuario(e.target.value)} value={usuario}/>
@@ -42,7 +42,7 @@ export function Login() {
           </div>
           <div>Ainda não tem conta?
             <Link to="/criarconta">
-          <button class="button_slide slide_down">Que tal criar uma!</button>
+          <button className="button_slide slide_down">Que tal criar uma!</button>
           </Link>
           </div>
     </form>
