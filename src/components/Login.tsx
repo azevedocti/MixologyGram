@@ -42,7 +42,7 @@ export function Login() {
           </div>
           <div>Ainda não tem conta?
             <Link to="/criarconta">
-          <button>Que tal criar uma!</button>
+          <button class="button_slide slide_down">Que tal criar uma!</button>
           </Link>
           </div>
     </form>

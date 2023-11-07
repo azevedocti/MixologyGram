@@ -2,8 +2,6 @@ import { FC } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { CreateAccountPage } from './pages/CreateAccountPage';
 import { Home } from './pages/HomePage';
-
-
 import { LoginPage } from './pages/LoginPage';
 import { UserPage } from './pages/UserPage';
 

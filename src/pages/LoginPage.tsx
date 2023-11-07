@@ -6,7 +6,7 @@ export function LoginPage() {
 
   return (
     <div className="box-login">
-      <h1>Login</h1>
+      <h1 className="NeonText">Login</h1>
       <Login />
       <Link to="/">Voltar para Home</Link>
    </div>

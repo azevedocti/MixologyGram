@@ -6,7 +6,7 @@ import { CreateAccount } from "../components/CreateAccount";
 export function CreateAccountPage() {
   return (
     <div className="box-login">
-      <h1>Criar Conta</h1>
+      <h1 className="NeonText">Criar Conta</h1>
       <CreateAccount />
       <Link to="/">Voltar para Home</Link>
    </div>

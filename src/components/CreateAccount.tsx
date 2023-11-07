@@ -40,7 +40,7 @@ export function CreateAccount() {
           </div>
           <div>Já tem conta?
             <Link to="/login">
-          <button>Que tal fazer login!</button>
+          <button class="button_slide slide_down">Que tal fazer login!</button>
           </Link>
           </div>
     </form>
