@@ -5,15 +5,14 @@ import minhaImagem4 from "/workspaces/MixologyGram/src/components/imgs/negroni.j
 import minhaImagem5 from "/workspaces/MixologyGram/src/components/imgs/vodka-cocktail.jpg";
 
 export function UserPage() {
-
   return (
     <>
-    <div id="head">
-    <h1 className="NeonText">
+      <div id="head">
+        <h1 className="NeonText">
           <a href="/usuario">Início</a>
         </h1>
-      <h1 className="NeonText">
-        <a href="google.com">Criar</a>
+        <h1 className="NeonText">
+          <a href="google.com">Criar</a>
         </h1>
         <h1 className="NeonText">
           <a href="google.com">Pesquisar</a>
@@ -21,30 +20,75 @@ export function UserPage() {
       </div>
 
       <div id="body">
-      <h2>Seus favoritos</h2>
+        <h2>Seus favoritos</h2>
       </div>
-  <div id="Fotos">
-      <div id="caipirinha">
-      <img src={minhaImagem} alt="Caipirinha" />
-        <h2 id="desc1">Caipirinha</h2>
+
+      <div id="Fotos">
+        <div id="caipirinha">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <img src={minhaImagem} alt="Caipirinha" />
+          </a>
+          <h2 id="desc1">Caipirinha</h2>
+        </div>
+        <div id="lagoaazul">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <img src={minhaImagem2} alt="Lagoa Azul" />
+          </a>
+          <h2 id="desc2">Lagoa Azul</h2>
+        </div>
+        <div id="cubalibre">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <img src={minhaImagem3} alt="Cuba Libre" />
+          </a>
+          <h2 id="desc3">Cuba Libre</h2>
+        </div>
+        <div id="negroni">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <img src={minhaImagem4} alt="Negroni" />
+        </a>
+          <h2 id="desc4">Negroni</h2>
+        </div>
+        <div id="vodkacocktail">
+          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src={minhaImagem5} alt="Vodka Cocktail" />
+          </a>
+          <h2 id="desc5">Vodka Cocktail</h2>
+        </div>
       </div>
-      <div id="lagoaazul">
-      <img src={minhaImagem2} alt="Lagoa Azul" />
-        <h2 id="desc2">Lagoa Azul</h2>
+
+
+      <div id="Fotos2">
+        <div id="caipirinha2">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <img src={minhaImagem} alt="Caipirinha" />
+          </a>
+          <h2 id="desc6">Caipirinha</h2>
+        </div>
+        <div id="lagoaazul2">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <img src={minhaImagem2} alt="Lagoa Azul" />
+          </a>
+          <h2 id="desc7">Lagoa Azul</h2>
+        </div>
+        <div id="cubalibre2">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <img src={minhaImagem3} alt="Cuba Libre" />
+          </a>
+          <h2 id="desc8">Cuba Libre</h2>
+        </div>
+        <div id="negroni2">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <img src={minhaImagem4} alt="Negroni" />
+        </a>
+          <h2 id="desc9">Negroni</h2>
+        </div>
+        <div id="vodkacocktail2">
+          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src={minhaImagem5} alt="Vodka Cocktail" />
+          </a>
+          <h2 id="desc10">Vodka Cocktail</h2>
+        </div>
       </div>
-      <div id="cubalibre">
-        <img src={minhaImagem3} alt="Cuba Libre" />
-        <h2 id="desc3">Cuba Libre</h2>
-      </div>
-      <div id="negroni">
-        <img src={minhaImagem4} alt="Negroni" />
-        <h2 id="desc4">Negroni</h2>
-      </div>
-      <div id="vodkacocktail">
-        <img src={minhaImagem5} alt="Vodka Cocktail" />
-        <h2 id="desc5">Vodka Cocktail</h2>
-      </div>
-  </div>
     </>
   );
 }
