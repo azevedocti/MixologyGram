@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import minhaImagem from "/workspaces/MixologyGram/src/components/imgs/caipirinha.jpeg";
 import minhaImagem2 from "/workspaces/MixologyGram/src/components/imgs/lagoaazul.jpg";
 import minhaImagem3 from "/workspaces/MixologyGram/src/components/imgs/cuba-libre.jpeg";
@@ -24,7 +23,7 @@ export function UserPage() {
       <div id="body">
       <h2>Seus favoritos</h2>
       </div>
-<div id="Fotos">
+  <div id="Fotos">
       <div id="caipirinha">
       <img src={minhaImagem} alt="Caipirinha" />
         <h2 id="desc1">Caipirinha</h2>
