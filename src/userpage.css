@@ -1,8 +1,8 @@
-
-
 /* Estilos base (para telas menores) */
 #head {
   padding: 20px;
+  margin-top: 300px; /* Reduzi a margem superior para 30px (em vez de 300px) */
+  text-align: left;
 }
 
 #head h1.NeonText {
@@ -12,7 +12,7 @@
 }
 
 #body {
-  margin-top: 60px;
+  margin-top: 60px; /* Reduzi a margem superior para 20px (em vez de 60px) */
   flex: 1;
   padding: 20px;
   display: flex;
@@ -24,8 +24,8 @@
   font-size: 18px;
   display: inline;
   margin-top: 15px;
+  margin-left: 60px;
   margin-right: 20px;
-  margin-left: 20px;
   position: relative;
   float: left;
 }
@@ -40,7 +40,7 @@
 #Fotos > div {
   flex: 0 0 calc(20% - 20px);
   margin-right: 20px;
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
 }
 
 #Fotos img {
@@ -52,6 +52,8 @@
 #lagoaazul,
 #cubalibre,
 #vodkacocktail,
+#moscow,
+#fernet,
 #negroni {
   display: flex;
   flex-direction: column;
@@ -63,6 +65,7 @@
   max-width: 400px;
   max-height: 600px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 #lagoaazul img, #negroni img, #cubalibre img {
@@ -76,20 +79,27 @@
   max-width: 400px;
   max-height: 600px;
   margin-left: 20px;
-}
-
-#desc1 {
-  margin-left: 83px;
-}
-
-#desc2, #desc3 {
-  margin-left: 60px;
-}
-
-#desc4 {
-  margin-left: 60px;
+  margin-right: 20px;
 }
 
 #desc5 {
   margin-left: 28px;
+  margin-right: 20px;
+}
+
+#fernet {
+  margin-left: 20px;
+}
+
+#desc6, #desc7 {
+  font-size: 18px;
+  display: inline;
+  margin-left: 20px;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+
+#desc8 {
+  font-size: 18px;
 }
