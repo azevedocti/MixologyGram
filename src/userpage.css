@@ -1,3 +1,5 @@
+
+
 /* Estilos base (para telas menores) */
 #head {
   padding: 20px;
@@ -89,69 +91,5 @@
 }
 
 #desc5 {
-  margin-left: 28px;
-}
-
-/* Estilos para a segunda seção de fotos */
-#Fotos2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-#Fotos2 > div {
-  flex: 0 0 calc(20% - 20px);
-  margin-right: 20px;
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
-}
-
-#Fotos2 img {
-  max-width: 100%;
-  height: auto;
-}
-
-#caipirinha2,
-#lagoaazul2,
-#cubalibre2,
-#vodkacocktail2,
-#negroni2 {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-#caipirinha2 img {
-  width: 100%;
-  max-width: 400px;
-  max-height: 600px;
-  margin-left: 20px;
-}
-
-#lagoaazul2 img, #negroni2 img, #cubalibre2 img {
-  width: 100%;
-  max-width: 322px;
-  margin-left: 22px;
-}
-
-#vodkacocktail2 img {
-  width: 80%;
-  max-width: 400px;
-  max-height: 600px;
-  margin-left: 20px;
-}
-
-#desc6 {
-  margin-left: 83px;
-}
-
-#desc7, #desc8 {
-  margin-left: 60px;
-}
-
-#desc9 {
-  margin-left: 60px;
-}
-
-#desc10 {
   margin-left: 28px;
 }

@@ -55,40 +55,6 @@ export function UserPage() {
           <h2 id="desc5">Vodka Cocktail</h2>
         </div>
       </div>
-
-
-      <div id="Fotos2">
-        <div id="caipirinha2">
-        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-          <img src={minhaImagem} alt="Caipirinha" />
-          </a>
-          <h2 id="desc6">Caipirinha</h2>
-        </div>
-        <div id="lagoaazul2">
-        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-          <img src={minhaImagem2} alt="Lagoa Azul" />
-          </a>
-          <h2 id="desc7">Lagoa Azul</h2>
-        </div>
-        <div id="cubalibre2">
-        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-          <img src={minhaImagem3} alt="Cuba Libre" />
-          </a>
-          <h2 id="desc8">Cuba Libre</h2>
-        </div>
-        <div id="negroni2">
-        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-          <img src={minhaImagem4} alt="Negroni" />
-        </a>
-          <h2 id="desc9">Negroni</h2>
-        </div>
-        <div id="vodkacocktail2">
-          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem5} alt="Vodka Cocktail" />
-          </a>
-          <h2 id="desc10">Vodka Cocktail</h2>
-        </div>
-      </div>
-    </>
-  );
+      </>
+  )
 }
