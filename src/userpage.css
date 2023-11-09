@@ -1,7 +1,7 @@
 /* Estilos base (para telas menores) */
 #head {
   padding: 20px;
-  margin-top: 300px; /* Reduzi a margem superior para 30px (em vez de 300px) */
+  margin-top: 300px; /* Reduzi a margem superior para 10px */
   text-align: left;
 }
 
@@ -12,9 +12,9 @@
 }
 
 #body {
-  margin-top: 60px; /* Reduzi a margem superior para 20px (em vez de 60px) */
+  margin-top: 10px; /* Ajustei a margem superior para 10px */
   flex: 1;
-  padding: 20px;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,9 +22,8 @@
 
 #desc1, #desc2, #desc3, #desc4, #desc5 {
   font-size: 18px;
-  display: inline;
-  margin-top: 15px;
-  margin-left: 60px;
+  margin-top: 10px;
+  margin-left: 20px; /* Ajustei a margem esquerda para 20px */
   margin-right: 20px;
   position: relative;
   float: left;
@@ -40,6 +39,8 @@
 #Fotos > div {
   flex: 0 0 calc(20% - 20px);
   margin-right: 20px;
+  margin-bottom: 20px; /* Adicionei margem inferior para espaçamento */
+  margin-top: 10px; /* Adicionei margem superior para espaçamento */
   text-align: center;
 }
 
@@ -93,13 +94,21 @@
 
 #desc6, #desc7 {
   font-size: 18px;
-  display: inline;
-  margin-left: 20px;
+  margin-left: 20px; /* Ajustei a margem esquerda para 20px */
   position: relative;
-  float: left;
   text-align: center;
 }
 
-#desc8 {
+#desc8, #desc9, #desc10 {
   font-size: 18px;
+}
+
+#manhattan {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#manhattan img {
+  max-width: 100%;
 }

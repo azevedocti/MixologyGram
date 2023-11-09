@@ -7,6 +7,10 @@ import minhaImagem6 from "/workspaces/MixologyGram/src/components/imgs/fernetcoc
 import minhaImagem7 from "/workspaces/MixologyGram/src/components/imgs/moscowmule.png";
 import minhaImagem8 from "/workspaces/MixologyGram/src/components/imgs/margarita.jpg";
 import minhaImagem9 from "/workspaces/MixologyGram/src/components/imgs/mojito.jpg";
+import minhaImagem10 from "/workspaces/MixologyGram/src/components/imgs/manhattan.jpg";
+
+
+
 
 export function UserPage() {
   return (
@@ -80,7 +84,13 @@ export function UserPage() {
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
             <img src={minhaImagem9} alt="Mojito" />
           </a>
-          <h2 id="desc8">Mojito</h2>
+          <h2 id="desc9">Mojito</h2>
+        </div>
+        <div id="manhattan">
+          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src={minhaImagem10} alt="Manhattan" />
+          </a>
+          <h2 id="desc10">Manhattan</h2>
         </div>
       </div>
     </>
