@@ -25,13 +25,8 @@ export function UserPage() {
 
         <div id="linha1">
         <div id="caipirinha">
-<<<<<<< HEAD:src/pages/UserPage.tsx
-          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src="/imgs/caipirinha.jpeg" alt="Caipirinha" />
-=======
           <a href="/produto/1"rel="noopener noreferrer">
-            <img src={minhaImagem} alt="Caipirinha" />
->>>>>>> refs/remotes/origin/main:src/pages/feedpage.tsx
+            <img src="/img/caipirinha.jpeg" alt="Caipirinha" />
           </a>
           <h2 id="desc1">Caipirinha de Limão</h2>
         </div>

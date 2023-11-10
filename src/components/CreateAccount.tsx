@@ -1,7 +1,5 @@
 import { FormEvent, useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
-
 import {CreateUser } from '../services/firebase';
 
 export function CreateAccount() {

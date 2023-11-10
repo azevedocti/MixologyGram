@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-
-=======
 import { Link, useParams } from "react-router-dom";
-import Voltar from "/workspaces/MixologyGram/src/components/icons/seta-esquerda.png";
-import MinhaImagem1 from "/workspaces/MixologyGram/src/components/imgs/caipirinha.jpeg";
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/main
 
-=======
 import "src/components/css/productpage.css";
->>>>>>> 8f04d88 (.)
 export function ProductPage() {
   let { id } = useParams();
 
@@ -32,7 +22,7 @@ export function ProductPage() {
           <div>
             {/* Usando o componente Link para navegação interna */}
             <Link to="/usuario">
-              <img id="back" src={Voltar} alt="Voltar" />
+              <img id="back" src="public/icons/seta-esquerda.png" alt="Voltar" />
             </Link>
           </div>
 
@@ -41,25 +31,13 @@ export function ProductPage() {
   <h2 className="NeonText">Cachaça, Limão, açúcar e MUITO gelo.</h2>
 </div>
 
-<<<<<<< HEAD
-        <div>
-          {/* Usando o componente Link para navegação interna */}
-          <Link to="/usuario">
-            <img id="back"  alt="Voltar" />
-          </Link>
-        </div>
-        <div>
-        <img alt="test" />
-        </div>
-=======
       
           <div id="produto">
             <img
               id="caipirinha"
-              src={MinhaImagem1}
+              src="/img/caipirinha.jpeg"
             />
           </div>
->>>>>>> refs/remotes/origin/main
 
         </div>
       </div>
