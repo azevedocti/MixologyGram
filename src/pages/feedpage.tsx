@@ -36,7 +36,7 @@ export function UserPage() {
 
         <div id="linha1">
         <div id="caipirinha">
-          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <a href="/produto/1"rel="noopener noreferrer">
             <img src={minhaImagem} alt="Caipirinha" />
           </a>
           <h2 id="desc1">Caipirinha de Limão</h2>

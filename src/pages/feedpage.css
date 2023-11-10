@@ -1,0 +1,120 @@
+
+#app {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: black;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  #head {
+    padding: 20px;
+    margin-top: 2%; 
+    text-align: left;
+  }
+
+
+  #head h1.NeonText {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 20px;
+  }
+  
+  #body {
+    margin-top: 10px; 
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para a primeira seção de fotos */
+  #Fotos {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+  }
+  
+  #Fotos > div {
+    flex: 0 0 calc(20% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px; 
+    text-align: center;
+  }
+  
+  #Fotos img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #caipirinha,
+  #lagoaazul,
+  #cubalibre,
+  #vodkacocktail,
+  #moscow,
+  #fernet,
+  #negroni,
+  #margarita,
+  #mojito,
+  #manhattan {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  #manhattan {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  #fernet {
+    margin-left: 20px;
+  }
+  
+  #vodkacocktail img {
+    margin-right: 20px;
+  }
+  
+  #caipirinha img,
+  #fernet img,
+  #margarita img,
+  #manhattan img,
+  #lagoaazul img,
+  #mojito img,
+  #negroni img,
+  #moscow img,
+  #cubalibre img,
+  #vodkacocktail img {
+    width: 80%;
+    max-width: 400px;
+    max-height: 600px;
+    margin-left: 20px;
+    border-radius: 25px;
+    margin-right: 20px;
+  }
+  
+  #desc1, #desc2, #desc3, #desc4, #desc5, #desc6, #desc7, #desc8, #desc9, #desc10 {
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+  }
+  
+  #linha1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+  }
+  
+  #linha2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
+  

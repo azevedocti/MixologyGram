@@ -8,12 +8,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
   color: white;
   background: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 /* Estilos para texto com classe .NeonText */
@@ -37,76 +31,3 @@ a {
   font-weight: bold;
 }
 
-/* Estilos para a classe .box-login */
-.box-login {
-  background: rgba(41, 34, 34, 0.8);
-  padding: 1rem 2rem;
-  max-width: 200px;
-  border-radius: 1rem;
-  text-align: center;
-  border: 2px solid rgb(216, 2, 134);
-  font-size: 14px;
-  letter-spacing: 1px;
-  box-shadow: inset 0 0 0 0 #D80286;
-  transition: ease-out 0.4s;
-}
-.box-login h1 {
-  margin: 0.5rem 0;
-}
-
-.box-login input {
-  width: 100%;
-  margin-bottom: 0.25rem;
-}
-
-/* Estilos para botões dentro de .box-login */
-.box-login button {
-  color: black;
-  border: 2px solid rgb(216, 2, 134);
-  border-radius: 0px;
-  padding: 5px 8px;
-  display: inline-block;
-  font-size: 14px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
-  transition: ease-out 0.4s;
-}
-
-.box-login button[type='submit'] {
-  color: black;
-  border: 2px solid rgb(216, 2, 134);
-  border-radius: 0px;
-  padding: 5px 15px;
-  display: inline-block;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
-  transition: ease-out 0.4s;
-}
-
-/* Estilos para botões hover */
-.box-login button:hover, .box-login button[type='submit']:hover {
-  box-shadow: inset 0 100px 0 0 #D80286;
-  background: rgb(150, 10, 143);
-}
-
-/* Estilos para a classe .button_slide */
-.button_slide {
-  color: black;
-  border: 2px solid rgb(216, 2, 134);
-  border-radius: 5px;
-  padding: 3px 5px;
-  display: inline-block;
-  font-size: 12px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
-  transition: ease-out 0.4s;
-}
-
-/* Estilos para a classe .slide_down no hover */
-.slide_down:hover {
-  box-shadow: inset 0 100px 0 0 #D80286;
-}
