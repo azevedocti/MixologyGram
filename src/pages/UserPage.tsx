@@ -10,8 +10,6 @@ import minhaImagem9 from "/workspaces/MixologyGram/src/components/imgs/mojito.jp
 import minhaImagem10 from "/workspaces/MixologyGram/src/components/imgs/manhattan.jpg";
 
 
-
-
 export function UserPage() {
   return (
     <>
@@ -32,6 +30,8 @@ export function UserPage() {
       </div>
 
       <div id="Fotos">
+
+        <div id="linha1">
         <div id="caipirinha">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
             <img src={minhaImagem} alt="Caipirinha" />
@@ -62,6 +62,8 @@ export function UserPage() {
           </a>
           <h2 id="desc5">Vodka Cocktail</h2>
         </div>
+        </div>
+        <div id="linha2">
         <div id="fernet">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
             <img src={minhaImagem6} alt="Fernet com Coca" />
@@ -91,6 +93,7 @@ export function UserPage() {
             <img src={minhaImagem10} alt="Manhattan" />
           </a>
           <h2 id="desc10">Manhattan</h2>
+        </div>
         </div>
       </div>
     </>
