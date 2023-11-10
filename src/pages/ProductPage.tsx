@@ -21,8 +21,9 @@ export function ProductPage() {
             <img id="back" src={Voltar} alt="Voltar" />
           </Link>
         </div>
-        <img src={} alt="" />
-
+        <div>
+        <img src={MinhaImagem1} alt="test" />
+        </div>
 
       </div>
       </div>
