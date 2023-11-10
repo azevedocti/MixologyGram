@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {getAuth} from 'firebase/auth';
 import {
   getFirestore,

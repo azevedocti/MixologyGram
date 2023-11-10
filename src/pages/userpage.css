@@ -1,13 +1,13 @@
 /* Estilos base (para telas menores) */
 #head {
   padding: 20px;
-  margin-top: 300px; /* Reduzi a margem superior para 10px */
+  margin-top: 700px; /* Reduzi a margem superior para 10px */
   text-align: left;
 }
 
 #head h1.NeonText {
   display: inline-block;
-  font-size: 36px;
+  font-size: 32px;
   margin-right: 20px;
 }
 
@@ -26,7 +26,6 @@
   margin-left: 20px; /* Ajustei a margem esquerda para 20px */
   margin-right: 20px;
   position: relative;
-  float: left;
 }
 
 /* Estilos para a primeira seção de fotos */
@@ -61,22 +60,12 @@
   text-align: left;
 }
 
-#caipirinha img {
-  width: 100%;
-  max-width: 400px;
-  max-height: 600px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#lagoaazul img, #negroni img, #cubalibre img {
-  width: 100%;
-  max-width: 322px;
-  margin-left: 22px;
-}
-
+#caipirinha img,
+#lagoaazul img,
+#negroni img,
+#cubalibre img,
 #vodkacocktail img {
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   max-height: 600px;
   margin-left: 20px;
