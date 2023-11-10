@@ -1,21 +1,65 @@
 #content {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    background: black;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: flex-start; /* Adicionado para alinhar à esquerda */
-    height: 100vh;
-  }
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+}
 
-  #Title {
-    text-align: left;
-  }
-  
-  #back {
-    max-width: 5%;
-    max-height: 5%;
-  }
+#Title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+  margin-top: 2%;
+}
+
+#Title h1 {
+  margin-right: 20px;
+}
+
+#back {
+  max-width: 5%;
+  max-height: 5%;
+  margin-bottom: 20px;
+}
+
+#produto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+#caipirinha {
+  border-radius: 25px;
+  width: 350px;
+  height: 250px;
+  margin-right: 20px; /* Adiciona margem à direita da imagem */
+}
+
+#titulo {
+  display: flex; /* Agora torna o container de título flexível */
+  flex-direction: column; /* Coluna para o conteúdo dentro de #titulo */
+  justify-content: flex-end;
+  align-items: flex-end; /* Alinhar o título à esquerda */
+  flex: 3;
+  padding: 20px;
+  text-align: right;
+}
+
+#titulo h1 {
+  margin-bottom: 10px;
+  white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+}
+
+#titulo h2 {
+  font-size: 1.2em; /* Tamanho da fonte ajustável */
+  white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+}

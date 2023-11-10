@@ -2,6 +2,7 @@ import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useLocalstorage from '../hooks/useLocalstorage';
 import { signIn } from '../services/firebase';
+import "/workspaces/MixologyGram/src/components/login.css";
 
 export function Login() {
   const [usuario, setUsuario] = useState('');
