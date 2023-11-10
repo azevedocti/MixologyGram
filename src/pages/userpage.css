@@ -3,7 +3,7 @@
 /* Estilos base (para telas menores) */
 #head {
   padding: 20px;
-  margin-top: 500px; /* Reduzi a margem superior para 10px */
+  margin-top: 200px; /* Reduzi a margem superior para 10px */
   text-align: left;
 }
 
@@ -20,14 +20,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-#desc1, #desc2, #desc3, #desc4, #desc5 {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-left: 20px; /* Ajustei a margem esquerda para 20px */
-  margin-right: 20px;
-  position: relative;
 }
 
 /* Estilos para a primeira seção de fotos */
@@ -50,18 +42,6 @@
   height: auto;
 }
 
-#linha1 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-
-#linha2 {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-
 #caipirinha,
 #lagoaazul,
 #cubalibre,
@@ -75,6 +55,16 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+
+#manhattan {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#fernet {
+  margin-left: 20px;
 }
 
 #vodkacocktail img {
@@ -98,39 +88,22 @@
   margin-right: 20px;
 }
 
-#desc5 {
-  margin-left: 28px;
-  margin-right: 20px;
-}
-
-#fernet {
-  margin-left: 20px;
-}
-
-#desc6, #desc7 {
+#desc1, #desc2, #desc3, #desc4, #desc5, #desc6, #desc7, #desc8, #desc9, #desc10 {
   font-size: 18px;
-  margin-left: 20px; /* Ajustei a margem esquerda para 20px */
   position: relative;
   text-align: center;
-}
-
-#desc8, #desc9, #desc10 {
-  font-size: 18px;
-}
-
-#manhattan {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
 }
 
 #linha1 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  margin-bottom: 5px; /* Adicionado para diminuir a distância para a próxima linha */
 }
+
 #linha2 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  margin-top: 5px; /* Adicionado para diminuir a distância para a linha anterior */
 }
