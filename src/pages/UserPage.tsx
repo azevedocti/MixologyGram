@@ -1,14 +1,3 @@
-import minhaImagem from "/workspaces/MixologyGram/src/components/imgs/caipirinha.jpeg";
-import minhaImagem2 from "/workspaces/MixologyGram/src/components/imgs/lagoaazul.jpg";
-import minhaImagem3 from "/workspaces/MixologyGram/src/components/imgs/cuba-libre.jpeg";
-import minhaImagem4 from "/workspaces/MixologyGram/src/components/imgs/negroni.jpg";
-import minhaImagem5 from "/workspaces/MixologyGram/src/components/imgs/vodka-cocktail.jpg";
-import minhaImagem6 from "/workspaces/MixologyGram/src/components/imgs/fernetcoca.jpg";
-import minhaImagem7 from "/workspaces/MixologyGram/src/components/imgs/moscowmule.png";
-import minhaImagem8 from "/workspaces/MixologyGram/src/components/imgs/margarita.jpg";
-import minhaImagem9 from "/workspaces/MixologyGram/src/components/imgs/mojito.jpg";
-import minhaImagem10 from "/workspaces/MixologyGram/src/components/imgs/manhattan.jpg";
-
 
 export function UserPage() {
   return (
@@ -37,31 +26,31 @@ export function UserPage() {
         <div id="linha1">
         <div id="caipirinha">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem} alt="Caipirinha" />
+            <img src="/imgs/caipirinha.jpeg" alt="Caipirinha" />
           </a>
           <h2 id="desc1">Caipirinha de Limão</h2>
         </div>
         <div id="lagoaazul">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem2} alt="Lagoa Azul" />
+            <img src="/imgs/lagoaazul.jpg" alt="Lagoa Azul" />
           </a>
           <h2 id="desc2">Lagoa Azul</h2>
         </div>
         <div id="cubalibre">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem3} alt="Cuba Libre" />
+            <img src="/imgs/cuba-libre.jpeg" alt="Cuba Libre" />
           </a>
           <h2 id="desc3">Cuba Libre</h2>
         </div>
         <div id="negroni">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem4} alt="Negroni" />
+            <img src="/imgs/negroni.jpg" alt="Negroni" />
           </a>
           <h2 id="desc4">Negroni</h2>
         </div>
         <div id="vodkacocktail">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem5} alt="Vodka Cocktail" />
+            <img src="/imgs/vodka-cocktail.jpg" alt="Vodka Cocktail" />
           </a>
           <h2 id="desc5">Vodka Cocktail</h2>
         </div>
@@ -69,31 +58,31 @@ export function UserPage() {
         <div id="linha2">
         <div id="fernet">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem6} alt="Fernet com Coca" />
+            <img src="/imgs/fernetcoca.jpg" alt="Fernet com Coca" />
           </a>
           <h2 id="desc6">Fernet com Coca-Cola</h2>
         </div>
         <div id="moscow">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem7} alt="Moscow Mule" />
+            <img src="/imgs/moscowmule.png" alt="Moscow Mule" />
           </a>
           <h2 id="desc7">Moscow Mule</h2>
         </div>
         <div id="margarita">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem8} alt="Margarita" />
+            <img src="/imgs/margarita.jpg" alt="Margarita" />
           </a>
           <h2 id="desc8">Margarita</h2>
         </div>
         <div id="mojito">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem9} alt="Mojito" />
+            <img src="/imgs/mojito.jpg" alt="Mojito" />
           </a>
           <h2 id="desc9">Mojito</h2>
         </div>
         <div id="manhattan">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src={minhaImagem10} alt="Manhattan" />
+            <img src="/imgs/manhattan.jpg" alt="Manhattan" />
           </a>
           <h2 id="desc10">Manhattan</h2>
         </div>

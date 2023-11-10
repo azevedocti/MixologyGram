@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Voltar from "src/components/imgs/caipirinha.jpeg";
-import MinhaImagem1 from "src/components/imgs/caipirinha.jpeg";
 
 
 export function ProductPage() {
@@ -18,11 +16,11 @@ export function ProductPage() {
         <div>
           {/* Usando o componente Link para navegação interna */}
           <Link to="/usuario">
-            <img id="back" src={Voltar} alt="Voltar" />
+            <img id="back"  alt="Voltar" />
           </Link>
         </div>
         <div>
-        <img src={MinhaImagem1} alt="test" />
+        <img alt="test" />
         </div>
 
       </div>

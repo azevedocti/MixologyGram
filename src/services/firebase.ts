@@ -59,15 +59,15 @@ export type filter = {
 };
 
 export async function selectAllItems(colecao: string, filter?: filter[]) {
-  const wh = filter?.map((f) => where(f.field, f.operation, f.value));
-  const q = query(collection(db, colecao), wh);
+  const wh : any = filter?.map((f:any) => where(f.field, f.operation, f.value));
+  const q : any = query(collection(db, colecao), wh);
   console.log('query', wh);
   const querySnapshot = await getDocs(q);
   const queryResult = [];
-  querySnapshot.forEach((doc) => {
+  querySnapshot.forEach((doc:any) => {
     queryResult.push({
       id: doc.id,
-      ...doc.data(),
+      ...doc?.data(),
     });
   });
   return queryResult;
