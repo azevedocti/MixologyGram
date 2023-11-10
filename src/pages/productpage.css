@@ -1,0 +1,21 @@
+#content {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start; /* Adicionado para alinhar à esquerda */
+    height: 100vh;
+  }
+
+  #Title {
+    text-align: left;
+  }
+  
+  #back {
+    max-width: 5%;
+    max-height: 5%;
+  }

@@ -23,6 +23,9 @@ export function UserPage() {
         <h1 className="NeonText">
           <a href="google.com">Pesquisar</a>
         </h1>
+        <h1 className="NeonText">
+          <a href="/">Sair</a>
+        </h1>
       </div>
 
       <div id="body">
@@ -99,3 +102,4 @@ export function UserPage() {
     </>
   );
 }
+

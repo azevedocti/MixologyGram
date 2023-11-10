@@ -6,6 +6,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 #head {
@@ -105,12 +106,12 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  margin-bottom: 5px; /* Adicionado para diminuir a distância para a próxima linha */
+  margin-bottom: 5px;
 }
 
 #linha2 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  margin-top: 5px; /* Adicionado para diminuir a distância para a linha anterior */
+  margin-top: 5px;
 }
