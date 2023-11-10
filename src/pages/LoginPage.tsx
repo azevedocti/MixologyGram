@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Login } from '../components/Login';
+import "../components/css/login.css";
 
 export function LoginPage() {
 

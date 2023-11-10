@@ -5,8 +5,12 @@ import { Link } from "react-router-dom";
 import { Link, useParams } from "react-router-dom";
 import Voltar from "/workspaces/MixologyGram/src/components/icons/seta-esquerda.png";
 import MinhaImagem1 from "/workspaces/MixologyGram/src/components/imgs/caipirinha.jpeg";
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/main
 
+=======
+import "src/components/css/productpage.css";
+>>>>>>> 8f04d88 (.)
 export function ProductPage() {
   let { id } = useParams();
 
