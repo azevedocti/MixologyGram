@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-/* Estilos base (para telas menores) */
+#app {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: black;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
 #head {
   padding: 20px;
-  margin-top: 200px; /* Reduzi a margem superior para 10px */
+  margin-top: 200px; 
   text-align: left;
 }
 
@@ -14,7 +21,7 @@
 }
 
 #body {
-  margin-top: 10px; /* Ajustei a margem superior para 10px */
+  margin-top: 10px; 
   flex: 1;
   padding: 20px;
   display: flex;
@@ -25,15 +32,15 @@
 /* Estilos para a primeira seção de fotos */
 #Fotos {
   display: flex;
-  flex-direction: column; /* Adicionado para dispor os itens em uma coluna */
+  flex-direction: column; 
   justify-content: flex-start;
 }
 
 #Fotos > div {
   flex: 0 0 calc(20% - 20px);
   margin-right: 20px;
-  margin-bottom: 20px; /* Adicionei margem inferior para espaçamento */
-  margin-top: 10px; /* Adicionei margem superior para espaçamento */
+  margin-bottom: 20px;
+  margin-top: 10px; 
   text-align: center;
 }
 
