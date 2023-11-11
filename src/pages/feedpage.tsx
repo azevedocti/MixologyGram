@@ -1,3 +1,5 @@
+import "../components/css/feedpage.css";
+
 
 export function UserPage() {
   return (
@@ -26,7 +28,7 @@ export function UserPage() {
         <div id="linha1">
         <div id="caipirinha">
           <a href="/produto/1"rel="noopener noreferrer">
-            <img src="/img/caipirinha.jpeg" alt="Caipirinha" />
+            <img src="/imgs/caipirinha.jpeg" alt="Caipirinha" />
           </a>
           <h2 id="desc1">Caipirinha de Limão</h2>
         </div>
