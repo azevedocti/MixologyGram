@@ -72,7 +72,7 @@ html, body {
   white-space: nowrap;
 }
 #desc {
-font-size:15px;
+font-size:18px;
 display: flex;
   flex-direction: column;
   justify-content: flex-end;

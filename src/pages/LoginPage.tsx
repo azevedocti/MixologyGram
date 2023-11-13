@@ -6,10 +6,12 @@ import "../components/css/login.css";
 export function LoginPage() {
 
   return (
+    <div id="container">
     <div className="box-login">
       <h1 className="NeonText">Login</h1>
       <Login />
       <Link to="/">Voltar para Home</Link>
+   </div>
    </div>
   );
 }
