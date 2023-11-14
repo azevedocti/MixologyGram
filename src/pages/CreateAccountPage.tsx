@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CreateAccount } from "../components/CreateAccount";
-
+import "/workspaces/MixologyGram/src/components/css/login.css";
 
 export function CreateAccountPage() {
   return (
