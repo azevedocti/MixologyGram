@@ -24,7 +24,7 @@ html, body {
   align-items: flex-start;
   text-align: left;
   margin-left: 20px;
-  padding: 20px;
+  padding: 0;
 }
 
 #Title h1 {
@@ -51,8 +51,8 @@ html, body {
 
 #caipirinha {
   border-radius: 25px;
-  width: 95%;
-  height: 95%;
+  width: 80%;
+  height: 80%;
   margin-right: 20px;
 
 }
@@ -73,11 +73,11 @@ html, body {
 }
 
 #titulo h2 {
-  font-size: 1.2em;
+  font-size: 1.0em;
   white-space: nowrap;
 }
 #desc {
-font-size:18px;
+font-size:14px;
 display: flex;
   flex-direction: column;
   justify-content: flex-end;
