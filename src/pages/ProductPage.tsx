@@ -22,7 +22,7 @@ export function ProductPage() {
 
           <div>
             <Link to="/usuario">
-              <img id="back" src="/icons/seta-esquerda.png" alt="Voltar" />
+              <img id="back" src="/icons/back_white.png" alt="Voltar" />
             </Link>
           </div>
 
@@ -58,6 +58,8 @@ export function ProductPage() {
                   </ol>
                 </h2>
               </div>
+            </div>
+            <div id="usuario">
             </div>
 
           </div>
