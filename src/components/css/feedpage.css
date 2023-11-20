@@ -12,8 +12,6 @@
     margin-top: 2%;
     text-align: left;
     display: flex;
-    justify-content: space-between; /* Alterado para espaçar os elementos */
-    align-items: center;
   }
   
   #head h1.NeonText {
@@ -21,9 +19,23 @@
     font-size: 32px;
     margin-right: 20px;
   }
+
+  #head2 {
+    display: flex;
+    margin-left: auto; /* Alinha à direita */
+    align-items: flex-end;
+}
+
+#user {
+    max-width: 5%;
+    max-height: 3%;  
+    margin-right: 20px;
+    padding: 5px;
+}
+
   
   #sair h2.NeonText {
-    font-size: 25px;
+    font-size: 20px;
   }
   
   
