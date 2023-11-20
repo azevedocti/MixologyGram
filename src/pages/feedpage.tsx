@@ -14,10 +14,15 @@ export function UserPage() {
         <h1 className="NeonText">
           <a href="google.com">Pesquisar</a>
         </h1>
-        <h1 className="NeonText" id="sair">
-          <a href="/">Sair</a>
-        </h1>
       </div>
+      <div id="sair">
+  <h2 className="NeonText" style={{ display: "flex", justifyContent: "flex-end" }} id="sair">
+    <a href="/">Sair</a>
+  </h2>
+  <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src="" alt="Usuário" />
+          </a>
+</div>
 
       <div id="body">
         <h2>Seus favoritos</h2>
