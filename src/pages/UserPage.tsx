@@ -21,7 +21,7 @@ export function UserPage() {
 
       <div id="body">
       <div id="produto" style={{flex:1}}>
-              <img id="User" src="/imgs/User.jpeg" alt="Usuario" />
+              <img id="User" src="/icons/user_white.png" alt="Usuario" />
             </div>
         <h2>User12</h2>
         <h2>5 seguidores </h2>

@@ -1,7 +1,6 @@
 import "../components/css/feedpage.css";
 
-
-export function UserPage() {
+export function FeedPage() {
   return (
     <>
       <div id="head">
@@ -14,9 +13,7 @@ export function UserPage() {
         <h1 className="NeonText">
           <a href="google.com">Pesquisar</a>
         </h1>
-      </div>
-      
-      <div id="head2">
+        <div id="head2">
   <h2 className="NeonText" id="sair">
     <a href="/">Sair</a>
   </h2>
@@ -26,6 +23,9 @@ export function UserPage() {
           </a>
   </h2>
 </div>
+      </div>
+      
+     
 
       <div id="body">
         <h2>Seus favoritos</h2>
