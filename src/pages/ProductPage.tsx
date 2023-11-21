@@ -21,7 +21,7 @@ export function ProductPage() {
           </div>
 
           <div>
-            <Link to="/usuario">
+            <Link to="/feed">
               <img id="back" src="/icons/back_white.png" alt="Voltar" />
             </Link>
           </div>
@@ -33,7 +33,7 @@ export function ProductPage() {
             </div>
             <div style={{flex:1}}>
               <div id="titulo">
-                <h1 className="NeonText">Caipirinha de Limão {id}</h1>
+                <h1 className="NeonText">Caipirinha de Limão</h1>
                 <h2 className="NeonText">Cachaça, Limão, açúcar e MUITO gelo.</h2>
               </div>
 

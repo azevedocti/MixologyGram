@@ -18,7 +18,7 @@ export function FeedPage() {
     <a href="/">Sair</a>
   </h2>
   <h2>
-  <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+  <a href="/usuario" rel="noopener noreferrer">
             <img id="user" src="/icons/user_white.png" alt="Usuário" />
           </a>
   </h2>

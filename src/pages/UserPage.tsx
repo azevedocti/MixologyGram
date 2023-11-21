@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 
@@ -18,6 +19,12 @@ export function UserPage() {
           <a href="/">Sair</a>
         </h1>
       </div>
+
+      <div>
+            <Link to="/feed">
+              <img id="back" src="/icons/back_white.png" alt="Voltar" />
+            </Link>
+          </div>
 
       <div id="body">
       <div id="produto" style={{flex:1}}>

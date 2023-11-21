@@ -42,17 +42,15 @@ html, body {
 #produto {
   display: flex;
   margin-left: 20px;
-  align-items: flex-start;
-  margin-top: 20px;
   justify-content: space-around;
-  align-items: center;
   padding: 20px;
+  align-items: flex-start;
 }
 
 #caipirinha {
   border-radius: 25px;
-  width: 80%;
-  height: 80%;
+  width: 700px;
+  height: 500px;
   margin-right: 20px;
 
 }
@@ -63,6 +61,7 @@ html, body {
   justify-content: flex-end;
   align-items: flex-start;
   flex: 3;
+  font-size: 20px;
   padding: 20px;
   text-align: right;
 }
@@ -73,11 +72,11 @@ html, body {
 }
 
 #titulo h2 {
-  font-size: 1.0em;
+  font-size: 18px;
   white-space: nowrap;
 }
 #desc {
-font-size:14px;
+font-size:18px;
 display: flex;
   flex-direction: column;
   justify-content: flex-end;
