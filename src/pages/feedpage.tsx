@@ -4,6 +4,7 @@ export function FeedPage() {
   return (
     <>
       <div id="head">
+      <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
         <h1 className="NeonText">
           <a href="/usuario">Início</a>
         </h1>
@@ -28,7 +29,7 @@ export function FeedPage() {
      
 
       <div id="body">
-        <h2>Seus favoritos</h2>
+        <h2>Posts recentes!</h2>
       </div>
 
       <div id="Fotos">
@@ -41,25 +42,19 @@ export function FeedPage() {
           <h2 id="desc1">Caipirinha de Limão</h2>
         </div>
         <div id="lagoaazul">
-          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <a href="/produto/1" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/lagoaazul.jpg" alt="Lagoa Azul" />
           </a>
           <h2 id="desc2">Lagoa Azul</h2>
         </div>
-        <div id="cubalibre">
-          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img src="/imgs/cuba-libre.jpeg" alt="Cuba Libre" />
-          </a>
-          <h2 id="desc3">Cuba Libre</h2>
-        </div>
         <div id="negroni">
-          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.google.com" rel="noopener noreferrer">
             <img src="/imgs/negroni.jpg" alt="Negroni" />
           </a>
           <h2 id="desc4">Negroni</h2>
         </div>
         <div id="vodkacocktail">
-          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.google.com" rel="noopener noreferrer">
             <img src="/imgs/vodka-cocktail.jpg" alt="Vodka Cocktail" />
           </a>
           <h2 id="desc5">Vodka Cocktail</h2>
@@ -90,6 +85,16 @@ export function FeedPage() {
           </a>
           <h2 id="desc9">Mojito</h2>
         </div>
+        </div>
+
+      </div>
+      <div id="linha3">
+      <div id="cubalibre">
+          <a href="https://www.google.com" rel="noopener noreferrer">
+            <img src="/imgs/cuba-libre.jpeg" alt="Cuba Libre" />
+          </a>
+          <h2 id="desc3">Cuba Libre</h2>
+        </div>
         <div id="manhattan">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/manhattan.jpg" alt="Manhattan" />
@@ -97,7 +102,6 @@ export function FeedPage() {
           <h2 id="desc10">Manhattan</h2>
         </div>
         </div>
-      </div>
     </>
   );
 }

@@ -16,13 +16,13 @@ import {
 import {signInWithEmailAndPassword, createUserWithEmailAndPassword,} from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBwxtyHIGexISVIxKMW2529p1jheJC8kmY",
-  authDomain: "mixologygram.firebaseapp.com",
-  projectId: "mixologygram",
-  storageBucket: "mixologygram.appspot.com",
-  messagingSenderId: "855961972215",
-  appId: "1:855961972215:web:3dc344f2bd2a90aabd52f2",
-  measurementId: "G-P7F1LQC2E0"
+  apiKey: "AIzaSyAm53rx0MyMYOVArYis64gzE9FUPPCSxXs",
+  authDomain: "mixology-data.firebaseapp.com",
+  projectId: "mixology-data",
+  storageBucket: "mixology-data.appspot.com",
+  messagingSenderId: "529621823588",
+  appId: "1:529621823588:web:8dc0a689189cb111002f71",
+  measurementId: "G-WQS6G1NXCZ"
 };
 
 const app = initializeApp(firebaseConfig);

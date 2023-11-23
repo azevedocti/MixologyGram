@@ -27,6 +27,7 @@ html, body {
   padding: 0;
 }
 
+
 #Title h1 {
   margin-right: 20px;
 }
@@ -50,9 +51,6 @@ html, body {
 #caipirinha {
   border-radius: 25px;
   width: 700px;
-  height: 500px;
-  margin-right: 20px;
-
 }
 
 #titulo {

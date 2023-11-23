@@ -16,8 +16,8 @@ export function Login() {
     e.preventDefault();
     signIn(usuario, senha)
       .then((credential) => {
-        alert('Bem-Vindo!' + credential.user.uid);
-        navigate("/usuario");
+        alert('Bem-Vindo!');
+        navigate("/feed");
       })
       .catch((error) => {
         console.log(error);

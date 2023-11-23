@@ -26,11 +26,22 @@
   align-items: flex-end;
 }
 
+#logo{
+  max-width: 75px;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 20px;
+}
+
 #user {
-  max-width: 20px;
+  max-width: 30px;
   margin-left: auto;
   margin-right: 20px;
   padding: 5px;
+}
+
+#sair{
+  margin-right: 14px;
 }
 
 
@@ -59,7 +70,6 @@
   flex: 0 0 calc(20% - 20px);
   margin-right: 20px;
   margin-bottom: 20px;
-  margin-top: 10px; 
   text-align: center;
 }
 
@@ -80,7 +90,6 @@
 #manhattan {
   display: flex;
   flex-direction: column;
-  text-align: left;
   margin-bottom: -170px;
 
 }
@@ -100,9 +109,7 @@
 }
 
 #caipirinha img {
-  width: 80%;
-  max-width: 400px;
-  max-height: 600px;
+  max-width: 300px;
   margin-left: 20px;
   border-radius: 25px;
   margin-right: 20px;
@@ -135,12 +142,17 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  margin-bottom: 5px;
 }
 
 #linha2 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  margin-top: 5px;
+  margin-top: 150px;
+}
+#linha3 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-top: 150px;
 }
