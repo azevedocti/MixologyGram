@@ -21,8 +21,8 @@ const firebaseConfig = {
   projectId: "mixology-data",
   storageBucket: "mixology-data.appspot.com",
   messagingSenderId: "529621823588",
-  appId: "1:529621823588:web:8dc0a689189cb111002f71",
-  measurementId: "G-WQS6G1NXCZ"
+  appId: "1:529621823588:web:aba9db5f1bc1b5ab002f71",
+  measurementId: "G-1EXX8MTJNJ"
 };
 
 const app = initializeApp(firebaseConfig);
