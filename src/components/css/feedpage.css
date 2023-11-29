@@ -85,6 +85,8 @@
 #moscow,
 #fernet,
 #negroni,
+#fitz,
+#aperol,
 #margarita,
 #mojito,
 #manhattan {
@@ -109,13 +111,15 @@
 }
 
 #caipirinha img {
-  max-width: 300px;
+  max-width: 400px;
   margin-left: 20px;
   border-radius: 25px;
   margin-right: 20px;
 }
 
 #fernet img,
+#aperol img,
+#fitz img,
 #margarita img,
 #manhattan img,
 #lagoaazul img,

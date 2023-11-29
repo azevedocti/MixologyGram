@@ -101,6 +101,18 @@ export function FeedPage() {
           </a>
           <h2 id="desc10">Manhattan</h2>
         </div>
+        <div id="aperol">
+          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/drink_aperol.jpg" alt="Aperol" />
+          </a>
+          <h2 id="desc10">Aperol Spritz</h2>
+        </div>
+        <div id="fitz">
+          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/fitzgerald.jpg" alt="Fitzgerald" />
+          </a>
+          <h2 id="desc10">Fitzgerald</h2>
+        </div>
         </div>
     </>
   );
