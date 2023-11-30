@@ -11,6 +11,7 @@ import {
   query,
   where,
   getDocs,
+  getDoc,
   onSnapshot,
 } from 'firebase/firestore';
 import {signInWithEmailAndPassword, createUserWithEmailAndPassword,} from "firebase/auth";
@@ -52,6 +53,12 @@ export function deleteItem(colecao: string, document: string) {
   const docRef = doc(db, colecao, document);
   return deleteDoc(docRef);
 }
+
+export function getItem(colecao: string, document: string) {
+  const docRef = doc(db, colecao, document);
+  return getDoc(docRef);
+}
+
 export type filter = {
   field: string;
   operation: string;
