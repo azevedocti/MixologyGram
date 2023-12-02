@@ -1,0 +1,62 @@
+#app {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  #head {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+  }
+  
+  #head h1.NeonText {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 20px;
+  }
+  
+  #head2 {
+    display: flex;
+    margin-left: auto; /* Alinha à direita */
+    align-items: flex-end;
+  }
+  
+  #logo{
+    max-width: 75px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 20px;
+  }
+  
+  #user {
+    max-width: 30px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 5px;
+  }
+  
+  #body {
+    margin-top: 10px; 
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#photo {
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
