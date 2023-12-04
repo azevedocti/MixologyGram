@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React { useEffect, useState } from "react";
 import "../components/css/feedpage.css";
 import { selectAllItems } from "../services/firebase";
 import { Link } from "react-router-dom";

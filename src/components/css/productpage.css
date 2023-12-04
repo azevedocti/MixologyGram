@@ -82,3 +82,17 @@ display: flex;
   padding: 20px;
   text-align: left;
 }
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.favorited {
+  background-color: #fff;
+  color: #000;
+}

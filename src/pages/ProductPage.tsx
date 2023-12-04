@@ -1,16 +1,28 @@
 import { Link, useParams } from "react-router-dom";
 import "../components/css/productpage.css";
-import { getItem, selectAllItems } from "../services/firebase"
-import { useState } from "react";
+import { getItem } from "../services/firebase";
+import React { useState, useEffect } from "react";
 
 export function ProductPage() {
-  let { id } = useParams();
+  const { id } = useParams();
   const [drink, setDrink] = useState<any>();
+  const [favorited, setFavorited] = useState(false);
 
-  getItem("drinks", id).then(dado => {
-    console.log(dado);
-    setDrink(dado);
-  });
+  useEffect(() => {
+    const fetchData = async () => {
+      const dado = await getItem("drinks", id);
+      console.log(dado);
+      setDrink(dado);
+      
+    };
+
+    fetchData();
+  }, [id]); // Executa novamente quando o id é alterado
+
+  const handleFavoriteClick = () => {
+    // Lógica para lidar com o clique no botão de favoritar
+    setFavorited(!favorited);
+  };
 
   return (
     <>
@@ -35,7 +47,6 @@ export function ProductPage() {
           </div>
 
           <div style={{ display: "flex" }}>
-
             <div id="produto" style={{ flex: 1 }}>
               <img id="caipirinha" src="/imgs/caipirinha.jpeg" alt="Caipirinha" />
             </div>
@@ -43,6 +54,12 @@ export function ProductPage() {
               <div id="titulo">
                 <h1 className="NeonText">{drink?.title}</h1>
                 <h2 className="NeonText">Cachaça, Limão, açúcar e MUITO gelo.</h2>
+                <button
+                  onClick={handleFavoriteClick}
+                  className={favorited ? "favorited" : ""}
+                >
+                  {favorited ? "Desfavoritar" : "Favoritar"}
+                </button>
               </div>
 
               <div id="descricao">
@@ -67,11 +84,8 @@ export function ProductPage() {
                 </h2>
               </div>
             </div>
-            <div id="usuario">
-            </div>
-
+            <div id="usuario"></div>
           </div>
-
         </div>
       </div>
     </>
