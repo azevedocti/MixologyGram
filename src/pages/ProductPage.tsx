@@ -13,14 +13,12 @@ export function ProductPage() {
       const dado = await getItem("drink", id);
       console.log(dado);
       setDrink(dado);
-      
     };
 
     fetchData();
-  }, [id]); // Executa novamente quando o id é alterado
+  }, [id]);
 
   const handleFavoriteClick = () => {
-    // Lógica para lidar com o clique no botão de favoritar
     setFavorited(!favorited);
   };
 
@@ -52,14 +50,20 @@ export function ProductPage() {
             </div>
             <div style={{ flex: 1 }}>
               <div id="titulo">
-                <h1 className="NeonText">{drink?.title}</h1>
-                <h2 className="NeonText">Cachaça, Limão, açúcar e MUITO gelo.</h2>
-                <button
-                  onClick={handleFavoriteClick}
-                  className={favorited ? "favorited" : ""}
-                >
-                  {favorited ? "Desfavoritar" : "Favoritar"}
-                </button>
+                {drink ? (
+                  <>
+                    <h1 className="NeonText">{drink.title}</h1>
+                    <h2 className="NeonText">Cachaça, Limão, açúcar e MUITO gelo.</h2>
+                    <button
+                      onClick={handleFavoriteClick}
+                      className={favorited ? "favorited" : ""}
+                    >
+                      {favorited ? "Desfavoritar" : "Favoritar"}
+                    </button>
+                  </>
+                ) : (
+                  <p>Carregando...</p>
+                )}
               </div>
 
               <div id="descricao">

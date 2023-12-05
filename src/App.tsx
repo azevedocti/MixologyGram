@@ -6,7 +6,7 @@ import { LoginPage } from './pages/LoginPage';
 import { FeedPage } from './pages/feedpage';
 import { ProductPage } from './pages/ProductPage';
 import { UserPage } from './pages/UserPage';
-import { CreatePoductPage } from './pages/CreateProductPage.tsx';
+import CreateProductPage from './pages/CreateProductPage';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
   },
   {
    path: '/create',
-   element: <CreatePoductPage/>
+   element: <CreateProductPage/>
 },
 ]);
 
