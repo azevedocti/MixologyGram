@@ -54,9 +54,9 @@ export function deleteItem(colecao: string, document: string) {
   return deleteDoc(docRef);
 }
 
-export function getItem(colecao: string, document: string) {
+export async function getItem(colecao: string, document: string) {
   const docRef = doc(db, colecao, document);
-  return getDoc(docRef);
+  return await getDoc(docRef);
 }
 
 export type filter = {
