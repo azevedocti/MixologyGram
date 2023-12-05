@@ -73,6 +73,7 @@ html, body {
   font-size: 18px;
   white-space: nowrap;
 }
+
 #desc {
 font-size:18px;
 display: flex;
@@ -94,7 +95,7 @@ button {
 }
 
 button.favorited {
-  background-color: yellow;
-  color: black;
+  background-color: purple;
+  color: white;
   border-radius: 15px;
 }
