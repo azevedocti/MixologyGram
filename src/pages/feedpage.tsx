@@ -30,10 +30,10 @@ export function FeedPage() {
       <div id="head">
         <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
         <h1 className="NeonText">
-          <a href="/usuario">Início</a>
+          <a href="/feed">Início</a>
         </h1>
         <h1 className="NeonText">
-        <Link to="/create-product">Criar</Link>
+        <Link to="/create">Criar</Link>
           
         </h1>
         <h1 className="NeonText">
