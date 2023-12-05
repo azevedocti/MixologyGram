@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import "../components/css/productpage.css";
 import { getItem } from "../services/firebase";
-import React { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export function ProductPage() {
   const { id } = useParams();
@@ -10,7 +10,7 @@ export function ProductPage() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const dado = await getItem("drinks", id);
+      const dado = await getItem("drink", id);
       console.log(dado);
       setDrink(dado);
       

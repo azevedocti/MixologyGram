@@ -84,15 +84,17 @@ display: flex;
 }
 
 button {
-  background-color: #000;
-  color: #fff;
+  background-color: white;
+  color: black;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 15px;
 }
 
 button.favorited {
-  background-color: #fff;
-  color: #000;
+  background-color: yellow;
+  color: black;
+  border-radius: 15px;
 }
