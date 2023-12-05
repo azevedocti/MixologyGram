@@ -33,7 +33,8 @@ export function FeedPage() {
           <a href="/usuario">Início</a>
         </h1>
         <h1 className="NeonText">
-          <a href="google.com">Criar</a>
+        <Link to="/create-product">Criar</Link>
+          
         </h1>
         <h1 className="NeonText">
           <a href="google.com">Pesquisar</a>
