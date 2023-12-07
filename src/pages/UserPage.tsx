@@ -44,7 +44,7 @@ export function UserPage() {
       </div>
 
       <div id="body">
-        <h2>Seus Favoritos!</h2>
+        <h2>Meus Favoritos!</h2>
       </div>
     </>
   );
