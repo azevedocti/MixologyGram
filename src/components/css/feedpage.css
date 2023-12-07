@@ -60,7 +60,8 @@
 
 /* Estilos para a primeira seção de fotos */
 #Fotos {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;

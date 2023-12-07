@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../components/css/feedpage.css";
 import { selectAllItems } from "../services/firebase";
 import { Link } from "react-router-dom";
@@ -14,27 +14,16 @@ export function FeedPage() {
 
     fetchData();
   }, []);
-
-  const organizeItems = (items, groupSize) => {
-    const organizedItems = [];
-    for (let i = 0; i < items.length; i += groupSize) {
-      organizedItems.push(items.slice(i, i + groupSize));
-    }
-    return organizedItems;
-  };
-
-  const organizedList = organizeItems(listaDrinks, 4);
-
   return (
     <>
-      <div id="head">
+      <div id="head" className="feed">
         <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
         <h1 className="NeonText">
           <a href="/feed">Início</a>
         </h1>
         <h1 className="NeonText">
-        <Link to="/create">Criar</Link>
-          
+          <Link to="/create">Criar</Link>
+
         </h1>
         <h1 className="NeonText">
           <a href="google.com">Pesquisar</a>
@@ -58,20 +47,12 @@ export function FeedPage() {
       </div>
 
       <div id="Fotos">
-        {organizedList.map((group, groupIndex) => (
-          <div key={groupIndex} className="row">
-            {group.map((drink, index) => (
-              <div key={index} className="drink-container">
-                <Link to={`/produto/${drink.id}`}>
-                  <img src={drink.image} alt={drink.title} />
-                </Link>
-                <h2 id="desc1">{drink.title}</h2>
-              </div>
-            ))}
-            {/* Adicione espaços vazios para preencher se o grupo não tiver 4 drinks */}
-            {Array.from({ length: 4 - group.length }).map((_, emptyIndex) => (
-              <div key={`empty-${emptyIndex}`} className="empty-container" />
-            ))}
+        {listaDrinks.map((drink, index) => (
+          <div key={index} className="drink-container">
+            <Link to={`/produto/${drink.id}`}>
+              <img src={drink.image} alt={drink.title} />
+            </Link>
+            <h2 id="desc1">{drink.title}</h2>
           </div>
         ))}
       </div>

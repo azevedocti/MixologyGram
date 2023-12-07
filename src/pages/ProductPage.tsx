@@ -13,10 +13,10 @@ type Drink = {
 export function ProductPage() {
   const { id } = useParams();
   const [drink, setDrink] = useState<Drink>({
-    title: "string",
-    subtitle: "string",
-    description: "string",
-    image: "string"
+    title: "",
+    subtitle: "",
+    description: "",
+    image: ""
   }
   );
   const [favorited, setFavorited] = useState(false);
@@ -37,7 +37,7 @@ export function ProductPage() {
 
   return (
     <>
-      <div id="content">
+      <div id="content" className="product">
         <div id="HeadProduct">
           <div id="Title">
             <h1 className="NeonText">
@@ -57,19 +57,21 @@ export function ProductPage() {
             </Link>
           </div>
 
+          
+
           <div style={{ display: "flex" }}>
             <div id="produto" style={{ flex: 1 }}>
-            {drink ? (
-              <img id="foto" src={drink.image} />
-            ): (
-              <p>Carregando...</p>
-            )}
+              {drink ? (
+                <img id="foto" src={drink.image} />
+              ) : (
+                <p>Carregando...</p>
+              )}
             </div>
             <div style={{ flex: 1 }}>
               <div id="titulo">
                 {drink ? (
                   <>
-                    <h1 className="NeonText">{drink.title}</h1>
+                    <h1 className="NeonText">{drink.title}{drink.title == "" && <div>Carregando...</div>}</h1>
                     <h2 className="NeonText">{drink.subtitle}</h2>
                     <button
                       onClick={handleFavoriteClick}
@@ -84,12 +86,12 @@ export function ProductPage() {
               </div>
 
               <div id="descricao">
-                {drink ?(
-                <h2 id="desc"> <span> {drink.description} </span>
-                </h2>
-                  ): (
-                    <p>Carregando...</p>
-                  )}
+                {drink ? (
+                  <h2 id="desc"> <span dangerouslySetInnerHTML={{ __html: drink.description }}></span>
+                  </h2>
+                ) : (
+                  <p>Carregando...</p>
+                )}
               </div>
             </div>
             <div id="usuario"></div>

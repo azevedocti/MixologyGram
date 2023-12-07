@@ -6,7 +6,7 @@ import "../components/css/login.css";
 export function LoginPage() {
 
   return (
-    <div id="container">
+    <div id="container" className="login">
     <div className="box-login">
       <h1 className="NeonText">Login</h1>
       <Login />
