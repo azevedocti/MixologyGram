@@ -1,7 +1,7 @@
+import { useState, useEffect } from "react";
 import { Await, Link, useParams } from "react-router-dom";
 import "../components/css/productpage.css";
 import { getItem } from "../services/firebase";
-import { useState, useEffect } from "react";
 
 type Drink = {
   title: string;
@@ -17,8 +17,7 @@ export function ProductPage() {
     subtitle: "",
     description: "",
     image: ""
-  }
-  );
+  });
   const [favorited, setFavorited] = useState(false);
 
   useEffect(() => {
@@ -29,10 +28,28 @@ export function ProductPage() {
     };
 
     fetchData();
-  }, []);
+  }, [id]);
+
+  useEffect(() => {
+    // Ao carregar a página, verifique se o ID está marcado como favorito no localStorage
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    setFavorited(favorites.includes(id));
+  }, [id]);
 
   const handleFavoriteClick = () => {
+    // Alterne o estado favorited
     setFavorited(!favorited);
+
+    // Obtenha os favoritos do localStorage
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+
+    // Adicione ou remova o ID da bebida da lista de favoritos no localStorage
+    if (favorited) {
+      const updatedFavorites = favorites.filter(favId => favId !== id);
+      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+    } else {
+      localStorage.setItem("favorites", JSON.stringify([...favorites, id]));
+    }
   };
 
   return (
@@ -40,11 +57,12 @@ export function ProductPage() {
       <div id="content" className="product">
         <div id="HeadProduct">
           <div id="Title">
+          <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
             <h1 className="NeonText">
               <Link to="/usuario">Início</Link>
             </h1>
             <h1 className="NeonText">
-              <Link to="google.com">Criar</Link>
+            <Link to="/create">Criar</Link>
             </h1>
             <h1 className="NeonText">
             <a href="/">Sair</a>
