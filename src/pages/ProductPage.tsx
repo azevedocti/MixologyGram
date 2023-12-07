@@ -67,6 +67,13 @@ export function ProductPage() {
             <h1 className="NeonText">
             <a href="/">Sair</a>
           </h1>
+          <div id="head2">
+          <h2>
+            <a href="/usuario" rel="noopener noreferrer">
+              <img id="user" src="/icons/user_white.png" alt="Usuário" />
+            </a>
+          </h2>
+        </div>
           </div>
 
           <div>

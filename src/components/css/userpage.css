@@ -26,12 +26,6 @@
     margin-right: 20px;
   }
   
-  #head2 {
-    display: flex;
-    margin-left: auto; /* Alinha à direita */
-    align-items: flex-end;
-  }
-  
   #logo{
     max-width: 75px;
     border-radius: 50%;

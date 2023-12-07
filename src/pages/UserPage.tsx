@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import "../components/css/userpage.css";
 import { Link } from "react-router-dom";
 import { getItem } from "../services/firebase";
-import "../components/css/userpage.css";
 
 export function UserPage() {
   const [favoriteIds, setFavoriteIds] = useState([]);
@@ -40,13 +40,6 @@ export function UserPage() {
         <h1 className="NeonText" id="sair">
           <a href="/">Sair</a>
         </h1>
-        <div id="head2">
-          <h2>
-            <a href="/usuario" rel="noopener noreferrer">
-              <img id="user" src="/icons/user_white.png" alt="Usuário" />
-            </a>
-          </h2>
-        </div>
       </div>
 
       <div>
