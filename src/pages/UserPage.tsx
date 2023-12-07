@@ -13,13 +13,10 @@ export function UserPage() {
         <h1 className="NeonText">
           <a href="/create">Criar</a>
         </h1>
-        <h1 className="NeonText">
-          <a href="google.com">Pesquisar</a>
-        </h1>
-        <div id="head2">
-          <h2 className="NeonText" id="sair">
+        <h1 className="NeonText" id="sair">
             <a href="/">Sair</a>
-          </h2>
+          </h1>
+        <div id="head2">
           <h2>
             <a href="/usuario" rel="noopener noreferrer">
               <img id="user" src="/icons/user_white.png" alt="Usuário" />

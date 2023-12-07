@@ -47,8 +47,8 @@ export function ProductPage() {
               <Link to="google.com">Criar</Link>
             </h1>
             <h1 className="NeonText">
-              <Link to="google.com">Pesquisar</Link>
-            </h1>
+            <a href="/">Sair</a>
+          </h1>
           </div>
 
           <div>
