@@ -68,7 +68,7 @@ export function CreateProductPage() {
         </div>
 
         <div>
-          <button type="submit">Enviar Post</button>
+          <button type="submit">Postar produto</button>
         </div>
       </form>
     </>
