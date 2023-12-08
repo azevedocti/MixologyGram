@@ -1,6 +1,7 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { addItem } from '/workspaces/MixologyGram/src/services/firebase';  // Substitua pelo caminho correto
+import { addItem, storage } from '/workspaces/MixologyGram/src/services/firebase';
+import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';  // Importe as funções necessárias para o Storage
 
 export function CreateProductPage() {
   const [id, setId] = useState('');
@@ -10,29 +11,54 @@ export function CreateProductPage() {
   const [description, setDescricao] = useState('');
   const nav = useNavigate();
 
-  async function handleLogin(e: FormEvent) {
+  const handleLogin = async (e: FormEvent) => {
     e.preventDefault();
 
-    // Crie um objeto com os dados do produto
-    const produtoData = {
-      title,
-      subtitle,
-      image,
-      description,
-    };
-
     try {
-      // Chame a função addItem para adicionar o produto ao banco de dados
-      await addItem('drinks', id, produtoData);
+      // Salvar imagem no Storage
+      const storageRef = ref(storage, `uploads/${image.name}`);
+      const uploadTask = uploadBytesResumable(storageRef, image);
 
-      // Após adicionar com sucesso, redirecione para a página de feed
-      alert('Produto postado com sucesso!');
-      nav('/feed');
+      await uploadTask.on(
+        'state_changed',
+        (snapshot) => {
+          // Aqui você pode incluir código para acompanhar o progresso do upload, se necessário
+        },
+        (error) => {
+          alert(error);
+        },
+        async () => {
+          // Obter a URL da imagem no Firebase Storage
+          const imageUrl = await getDownloadURL(uploadTask.snapshot.ref);
+
+          // Crie um objeto com os dados do produto
+          const produtoData = {
+            title,
+            subtitle,
+            image: imageUrl,
+            description,
+          };
+
+          // Chame a função addItem para adicionar o produto ao banco de dados
+          await addItem('drinks', id, produtoData);
+
+          // Após adicionar com sucesso, redirecione para a página de feed
+          alert('Produto postado com sucesso!');
+          nav('/feed');
+        }
+      );
     } catch (error) {
       console.error('Erro ao adicionar produto:', error);
       alert('Não foi possível postar o produto. Por favor, tente novamente.');
     }
-  }
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setFoto(file);
+    }
+  };
 
   return (
     <>
@@ -65,7 +91,7 @@ export function CreateProductPage() {
 
         <div>
           <label>Foto: </label>
-          <input onChange={(e) => setFoto(e.target.value)} value={image} />
+          <input type="file" onChange={handleFileChange} accept="image/*" />
         </div>
 
         <div>
