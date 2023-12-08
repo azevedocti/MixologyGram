@@ -1,5 +1,6 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { addItem } from '/workspaces/MixologyGram/src/services/firebase';  // Substitua pelo caminho correto
 
 export function CreateProductPage() {
   const [titulo, setTitulo] = useState('');
@@ -8,25 +9,28 @@ export function CreateProductPage() {
   const [descricao, setDescricao] = useState('');
   const nav = useNavigate();
 
-  function handleLogin(e: FormEvent) {
+  async function handleLogin(e: FormEvent) {
     e.preventDefault();
 
-    // Adicione aqui a lógica para criar o produto com os dados fornecidos
-    console.log('Título:', titulo);
-    console.log('Subtítulo:', subtitulo);
-    console.log('Foto:', foto);
-    console.log('Descrição:', descricao);
+    // Crie um objeto com os dados do produto
+    const produtoData = {
+      titulo,
+      subtitulo,
+      foto,
+      descricao,
+    };
 
-    // Exemplo: Implemente a lógica de criação de produto aqui
-    // createProductFunction(titulo, subtitulo, foto, descricao)
-    //   .then(() => {
-    //     alert('Produto criado com sucesso!');
-    //     nav('/feed'); // Redireciona para a página de feed após criar o produto
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //     alert('Não foi possível criar o produto: ' + error.message);
-    //   });
+    try {
+      // Chame a função addItem para adicionar o produto ao banco de dados
+      await addItem('suaColecao', 'seuDocumento', produtoData);
+
+      // Após adicionar com sucesso, redirecione para a página de feed
+      alert('Produto postado com sucesso!');
+      nav('/feed');
+    } catch (error) {
+      console.error('Erro ao adicionar produto:', error);
+      alert('Não foi possível postar o produto. Por favor, tente novamente.');
+    }
   }
 
   return (
