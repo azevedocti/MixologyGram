@@ -17,7 +17,8 @@ export function UserPage() {
       const drinkData = await Promise.all(
         favoriteIds.map(async (id) => {
           const drink = await getItem("drinks", id);
-          return drink.data();
+          console.log("Drink ID:", id); // Add this line to print the ID
+          return {...drink.data(), id};
         })
       );
 
@@ -26,7 +27,7 @@ export function UserPage() {
 
     fetchData();
   }, [favoriteIds]);
-
+  
   return (
     <>
       <div id="head">
@@ -61,14 +62,14 @@ export function UserPage() {
         <h2>Meus Favoritos!</h2>
         {favoriteDrinks.length > 0 ? (
           <div id="fotosuser">
-            {favoriteDrinks.map((drink, index) => (
-              <div key={index} className="drink-container">
-                <Link to={`/produto/${drink.id}`}>
-                  <img src={drink.image} alt={drink.title} />
-                </Link>
-                <h3>{drink.title}</h3>
-              </div>
-            ))}
+{favoriteDrinks.map((drink, index) => (
+  <div key={index} className="drink-container">
+    <Link to={`/produto/${drink.id}`}>
+      <img src={drink.image} alt={drink.title} />
+      <h3>{drink.title}</h3>
+    </Link>
+  </div>
+))}
           </div>
         ) : (
           <p>Nenhum favorito encontrado.</p>

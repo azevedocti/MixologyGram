@@ -51,7 +51,7 @@ export function CreateProductPage() {
         </div>
 
         <div>
-          <label>Subtítulo: </label>
+          <label>Principais Ingredientes: </label>
           <input
             onChange={(e) => setSubtitulo(e.target.value)}
             value={subtitulo}
