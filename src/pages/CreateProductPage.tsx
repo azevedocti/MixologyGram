@@ -55,7 +55,7 @@ export function CreateProductPage() {
   };
 
   return (
-    <div className="create-container">
+    <div id="head" className="create-container">
       <div id="head" className="feed">
         <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
         <h1 className="NeonText">
