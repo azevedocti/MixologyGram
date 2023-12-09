@@ -48,6 +48,10 @@
   align-items: flex-start;
 }
 
+#HeadProduct{
+  width: 100%;
+}
+
 #foto {
   border-radius: 25px;
   width:700px;
