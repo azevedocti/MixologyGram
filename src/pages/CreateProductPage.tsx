@@ -1,7 +1,8 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { addItem, storage } from '/workspaces/MixologyGram/src/services/firebase';
-import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';  // Importe as funções necessárias para o Storage
+import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
+import "/workspaces/MixologyGram/src/components/css/create.css";
 
 export function CreateProductPage() {
   const [id, setId] = useState('');
@@ -15,23 +16,18 @@ export function CreateProductPage() {
     e.preventDefault();
 
     try {
-      // Salvar imagem no Storage
       const storageRef = ref(storage, `uploads/${image.name}`);
       const uploadTask = uploadBytesResumable(storageRef, image);
 
       await uploadTask.on(
         'state_changed',
-        (snapshot) => {
-          // Aqui você pode incluir código para acompanhar o progresso do upload, se necessário
-        },
+        (snapshot) => {},
         (error) => {
           alert(error);
         },
         async () => {
-          // Obter a URL da imagem no Firebase Storage
           const imageUrl = await getDownloadURL(uploadTask.snapshot.ref);
 
-          // Crie um objeto com os dados do produto
           const produtoData = {
             title,
             subtitle,
@@ -39,10 +35,8 @@ export function CreateProductPage() {
             description,
           };
 
-          // Chame a função addItem para adicionar o produto ao banco de dados
           await addItem('drinks', id, produtoData);
 
-          // Após adicionar com sucesso, redirecione para a página de feed
           alert('Produto postado com sucesso!');
           nav('/feed');
         }
@@ -61,9 +55,8 @@ export function CreateProductPage() {
   };
 
   return (
-    <>
-
-<div id="head" className="feed">
+    <div className="create-container">
+      <div id="head" className="feed">
         <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
         <h1 className="NeonText">
           <a href="/feed">Início</a>
@@ -72,8 +65,8 @@ export function CreateProductPage() {
           <Link to="/create">Criar</Link>
         </h1>
         <h1 className="NeonText">
-            <a href="/">Sair</a>
-          </h1>
+          <a href="/">Sair</a>
+        </h1>
         <div id="head2">
           <h2>
             <a href="/usuario" rel="noopener noreferrer">
@@ -90,12 +83,14 @@ export function CreateProductPage() {
       </div>
 
       <div>
-        <h1>Criar Novo Post</h1>
+        <h1 className="NeonText">
+          <a>Criar novo Post</a>
+        </h1>
       </div>
 
-      <form onSubmit={handleLogin}>
-      <div>
-        <h2> Insira as seguintes informações: </h2>
+      <form onSubmit={handleLogin} className="box-create">
+        <div>
+          <h2> Insira as seguintes informações: </h2>
           <label>ID: </label>
           <input onChange={(e) => setId(e.target.value)} value={id} />
         </div>
@@ -129,6 +124,6 @@ export function CreateProductPage() {
           <button type="submit">Postar produto</button>
         </div>
       </form>
-    </>
+    </div>
   );
 }
