@@ -55,6 +55,7 @@ export function CreateProductPage() {
   };
 
   return (
+    <>
     <div id="head" className="create-container">
       <div id="head" className="feed">
         <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
@@ -125,5 +126,6 @@ export function CreateProductPage() {
         </div>
       </form>
     </div>
+    </>
   );
 }
