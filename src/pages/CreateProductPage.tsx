@@ -57,18 +57,18 @@ export function CreateProductPage() {
   return (
     <>
     <div id="head" className="head">
-      <div id="head" className="feed">
-        <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
-        <h1 className="NeonText">
-          <a href="/feed">Início</a>
-        </h1>
-        <h1 className="NeonText">
-          <Link to="/create">Criar</Link>
-        </h1>
-        <h1 className="NeonText">
-          <a href="/">Sair</a>
-        </h1>
-        <div id="head2">
+    <div id="Title">
+          <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
+            <h1 className="NeonText">
+              <Link to="/usuario">Início</Link>
+            </h1>
+            <h1 className="NeonText">
+            <Link to="/create">Criar</Link>
+            </h1>
+            <h1 className="NeonText">
+            <a href="/">Sair</a>
+          </h1>
+          <div id="head2">
           <h2>
             <a href="/usuario" rel="noopener noreferrer">
               <img id="user" src="/icons/user_white.png" alt="Usuário" />
@@ -76,15 +76,16 @@ export function CreateProductPage() {
           </h2>
         </div>
       </div>
+      </div>
 
       <div>
         <Link to="/feed">
-          <img id="back" src="/icons/back_white.png" alt="Voltar" />
+          <img id="backproduct" src="/icons/back_white.png" alt="Voltar" />
         </Link>
       </div>
 
-      </div>
 
+<div id="form">
 <div id="head" className="create-container">
 
       <div>
@@ -129,6 +130,7 @@ export function CreateProductPage() {
           <button type="submit">Postar produto</button>
         </div>
       </form>
+    </div>
     </div>
     </>
   );

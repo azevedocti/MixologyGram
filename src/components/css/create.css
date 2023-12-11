@@ -4,20 +4,29 @@
   display: flex;
 }
 
+#head2 {
+  display: flex;
+  margin-left: auto;
+  align-items: flex-end;
+}
 
+#Title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 20px;
+  padding: 0;
+}
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    text-align: center;
-  }
+#backproduct {
+  max-width: 3%;
+  max-height: 3%;  
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+}
   
   /* Estilos para a classe .button_slide */
   .button_slide {
@@ -96,3 +105,12 @@ body {
     background: rgb(150, 10, 143);
   }
   
+  #form{
+    display: flex;
+    justify-content: center;
+  }
+
+  #user{max-width: 30px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 5px;}
