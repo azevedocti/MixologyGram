@@ -1,31 +1,79 @@
-import { Link, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Await, Link, useParams } from "react-router-dom";
 import "../components/css/productpage.css";
-import { getItem, selectAllItems } from "../services/firebase"
-import { useState } from "react";
+import { getItem } from "../services/firebase";
+
+type Drink = {
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+}
 
 export function ProductPage() {
-  let { id } = useParams();
-  const [drink, setDrink] = useState<any>();
-
-  getItem("drinks", id).then(dado => {
-    console.log(dado);
-    setDrink(dado);
+  const { id } = useParams();
+  const [drink, setDrink] = useState<Drink>({
+    title: "",
+    subtitle: "",
+    description: "",
+    image: ""
   });
+  const [favorited, setFavorited] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const dado = await getItem("drinks", id);
+      setDrink(dado.data() as Drink);
+      console.log("texto", dado.data());
+    };
+
+    fetchData();
+  }, [id]);
+
+  useEffect(() => {
+    // Ao carregar a página, verifique se o ID está marcado como favorito no localStorage
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    setFavorited(favorites.includes(id));
+  }, [id]);
+
+  const handleFavoriteClick = () => {
+    // Alterne o estado favorited
+    setFavorited(!favorited);
+
+    // Obtenha os favoritos do localStorage
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+
+    // Adicione ou remova o ID da bebida da lista de favoritos no localStorage
+    if (favorited) {
+      const updatedFavorites = favorites.filter(favId => favId !== id);
+      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+    } else {
+      localStorage.setItem("favorites", JSON.stringify([...favorites, id]));
+    }
+  };
 
   return (
     <>
-      <div id="content">
+      <div id="content" className="product">
         <div id="HeadProduct">
           <div id="Title">
+          <img id="logo" src="/imgs/logo_preta_roxa.png" alt="Logo" />
             <h1 className="NeonText">
               <Link to="/usuario">Início</Link>
             </h1>
             <h1 className="NeonText">
-              <Link to="google.com">Criar</Link>
+            <Link to="/create">Criar</Link>
             </h1>
             <h1 className="NeonText">
-              <Link to="google.com">Pesquisar</Link>
-            </h1>
+            <a href="/">Sair</a>
+          </h1>
+          <div id="head2">
+          <h2>
+            <a href="/usuario" rel="noopener noreferrer">
+              <img id="user" src="/icons/user_white.png" alt="Usuário" />
+            </a>
+          </h2>
+        </div>
           </div>
 
           <div>
@@ -34,44 +82,45 @@ export function ProductPage() {
             </Link>
           </div>
 
-          <div style={{ display: "flex" }}>
+          
 
+          <div style={{ display: "flex" }}>
             <div id="produto" style={{ flex: 1 }}>
-              <img id="caipirinha" src="/imgs/caipirinha.jpeg" alt="Caipirinha" />
+              {drink ? (
+                <img id="foto" src={drink.image} />
+              ) : (
+                <p>Carregando...</p>
+              )}
             </div>
             <div style={{ flex: 1 }}>
               <div id="titulo">
-                <h1 className="NeonText">{drink?.title}</h1>
-                <h2 className="NeonText">Cachaça, Limão, açúcar e MUITO gelo.</h2>
+                {drink ? (
+                  <>
+                    <h1 className="NeonText">{drink.title}{drink.title == "" && <div>Carregando...</div>}</h1>
+                    <h2 className="NeonText">{drink.subtitle}</h2>
+                    <button
+                      onClick={handleFavoriteClick}
+                      className={favorited ? "favorited" : ""}
+                    >
+                      {favorited ? "Desfavoritar" : "Favoritar"}
+                    </button>
+                  </>
+                ) : (
+                  <p>Carregando...</p>
+                )}
               </div>
 
               <div id="descricao">
-                <h2 id="desc">
-                  Ingredientes:
-                  <ul>
-                    <li>1 limão</li>
-                    <li>2 colheres de chá de açúcar</li>
-                    <li>Gelo a gosto</li>
-                    <li>50 ml de cachaça</li>
-                  </ul>
-                  Instruções:
-                  <ol>
-                    <li>Corte o limão em pedaços ou fatias.</li>
-                    <li>Coloque o limão cortado em um copo.</li>
-                    <li>Adicione o açúcar sobre o limão.</li>
-                    <li>Use um socador para amassar o limão e misturar bem com o açúcar.</li>
-                    <li>Adicione gelo a gosto no copo.</li>
-                    <li>Despeje a cachaça sobre a mistura.</li>
-                    <li>Mexa bem. Sirva e aproveite sua caipirinha de limão!</li>
-                  </ol>
-                </h2>
+                {drink ? (
+                  <h2 id="desc"> <span dangerouslySetInnerHTML={{ __html: drink.description }}></span>
+                  </h2>
+                ) : (
+                  <p>Carregando...</p>
+                )}
               </div>
             </div>
-            <div id="usuario">
-            </div>
-
+            <div id="usuario"></div>
           </div>
-
         </div>
       </div>
     </>

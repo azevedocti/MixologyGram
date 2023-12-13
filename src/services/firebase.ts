@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import {getStorage} from "firebase/storage";
 import {getAuth} from 'firebase/auth';
+
 import {
   getFirestore,
   doc,
@@ -54,10 +56,12 @@ export function deleteItem(colecao: string, document: string) {
   return deleteDoc(docRef);
 }
 
-export function getItem(colecao: string, document: string) {
+export async function getItem(colecao: string, document: string) {
   const docRef = doc(db, colecao, document);
-  return getDoc(docRef);
+  return await getDoc(docRef);
 }
+
+
 
 export type filter = {
   field: string;
@@ -79,3 +83,4 @@ export async function selectAllItems(colecao: string, filter?: filter[]) {
   });
   return queryResult;
 }
+export const storage = getStorage(app);

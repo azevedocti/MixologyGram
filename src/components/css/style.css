@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+#logoHome{
+    max-width: 300px;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
 /* Estilização global para HTML e body */
 html, body {
   font-family: 'Roboto', sans-serif;
